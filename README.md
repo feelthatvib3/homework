@@ -1,1 +1,1 @@
-# homework of vladyslav skrynnyk
+# homework
