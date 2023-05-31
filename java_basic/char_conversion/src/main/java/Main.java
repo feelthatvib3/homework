@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
         // first approach (ASCII table)
         char x = '0';
         int xx = x;
