@@ -1,9 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-<<<<<<< HEAD
-=======
-
->>>>>>> cc33f13 (Add char_conversion task)
         // first approach (ASCII table)
         char x = '0';
         int xx = x;
