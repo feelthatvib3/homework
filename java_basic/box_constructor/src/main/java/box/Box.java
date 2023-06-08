@@ -14,6 +14,6 @@ public class Box {
     public void calculateVolume() {
         double volume = length * width * height;
 
-        System.out.println("The volume of the box is: " + (int) (volume) + " cm^3");
+        System.out.println("The volume of the box is: " + volume + " cm^3");
     }
 }
