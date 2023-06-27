@@ -1,6 +1,12 @@
 #!/bin/bash
 
-echo "your name is: " && whoami
-echo "your working directory is: " && pwd
-echo "number of processes: " && ps -ef | wc -l
+processes=ps -ef | wc- l
+result=$(expr $processes - 1)
+
+echo -n "your name is: "
+whoami
+echo -n "your working directory is: "
+pwd
+echo -n "number of processes: "
+result
 echo "done"
