@@ -30,7 +30,7 @@ body {
   color: #EEEEEE;
 }
 
-.wrapper-content {
+.content {
   background-color: #34495E;
   border: 2px solid transparent;
   cursor: pointer;
@@ -40,7 +40,7 @@ body {
   transition: all 200ms ease-in-out;
 }
 
-.wrapper-content:hover {
+.content:hover {
   background-color: transparent;
   border: 2px solid #34495E;
 
