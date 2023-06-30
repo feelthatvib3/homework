@@ -1,0 +1,37 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  font-weight: 500;
+}
+
+td,
+th {
+  padding: 2px 16px;
+  border: 1px solid black;
+}
+
+tr {
+  transition: all 150ms ease-in-out;
+}
+
+tr:nth-child(2n + 1):not(thead > tr) {
+  background-color: rgb(230, 230, 230);
+}
+
+tr:hover:not(thead > tr) {
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+}
