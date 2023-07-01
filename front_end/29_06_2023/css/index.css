@@ -23,7 +23,7 @@ tr {
   transition: all 150ms ease-in-out;
 }
 
-tr:nth-child(2n + 1):not(thead > tr) {
+tr:nth-child(even):not(thead > tr) {
   background-color: rgb(230, 230, 230);
 }
 
