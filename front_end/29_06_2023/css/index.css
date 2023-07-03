@@ -15,24 +15,26 @@ table {
 
 td,
 th {
-  padding: 2px 16px;
+  padding: 5px 15px;
   border: 1px solid black;
 }
 
-tr {
+tbody > tr {
   transition: all 150ms ease-in-out;
 }
 
-tr:nth-child(even) {
+tbody > tr:nth-child(2n + 1) {
   background-color: rgb(230, 230, 230);
 }
 
-tr:hover:not(thead > tr) {
+tbody > tr:hover {
   background-color: rgb(230, 230, 230);
   cursor: pointer;
 }
 
 .flag {
+  aspect-ratio: 6 / 4;
+  vertical-align: middle;
   width: 50px;
   height: auto;
 }
