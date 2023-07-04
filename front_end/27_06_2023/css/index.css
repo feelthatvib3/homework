@@ -4,8 +4,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-  font-family: 'Poppins', sans-serif;
+
+  font-family: "Poppins", sans-serif;
   text-align: left;
 }
 
@@ -25,24 +25,23 @@ body {
   padding: 40px;
   border-radius: 20px;
 
-  text-align: left;
   font-weight: 500;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .content {
-  background-color: #34495E;
+  background-color: #34495e;
   border: 2px solid transparent;
   cursor: pointer;
 
-  padding: 21px;
+  padding: 20px;
   border-radius: 20px;
   transition: all 200ms ease-in-out;
 }
 
 .content:hover {
   background-color: transparent;
-  border: 2px solid #34495E;
+  border: 2px solid #34495e;
 
-  color: #34495E;
+  color: #34495e;
 }
