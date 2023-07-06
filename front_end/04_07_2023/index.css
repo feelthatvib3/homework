@@ -31,7 +31,6 @@ body {
 .card-image {
   width: 100%;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .card-category,
@@ -67,7 +66,7 @@ body {
 .card-primary-content {
   position: absolute;
   bottom: 0;
-  padding: 2rem;
+  padding: 0 0 1rem 1rem;
   color: #ffffff;
 }
 
@@ -111,6 +110,7 @@ body {
 @media (min-width: 768px) {
   .card-primary-content {
     width: 80%;
+    padding: 0 0 2rem 2rem;
   }
 
   .card-secondary-wrapper {
@@ -123,7 +123,7 @@ body {
   body {
     height: 100vh;
     align-items: center;
-    padding: 0;
+    padding: 0 1rem;
   }
 
   .cards {
