@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem 0;
+  max-width: 800px;
+}
+
+.card-secondary-wrapper {
+  display: grid;
+  gap: 1rem 0;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-category,
+.card-date {
+  font-weight: 500;
+  color: #444444;
+}
+
+/* card-primary */
+
+.card-primary {
+  position: relative;
+  height: 630px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2)
+  );
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-image 0.3s;
+}
+
+.card-primary-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.card-primary-content {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.card-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.card-primary-title {
+  font-size: 2rem;
+}
+
+/* card-secondary */
+
+.card-secondary {
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.card-secondary-image {
+  aspect-ratio: 265 / 165;
+}
+
+.card-secondary:hover .card-secondary-title {
+  color: #0057d9;
+}
+
+.card-secondary-content {
+  padding: 1rem;
+}
+
+.card-secondary-title {
+  font-size: 1.5rem;
+  transition: color 300ms;
+}
+
+@media (min-width: 768px) {
+  .card-primary-content {
+    width: 80%;
+  }
+
+  .card-secondary-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    align-items: center;
+    padding: 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1.5rem;
+    max-width: 1280px;
+  }
+
+  .card-primary {
+    height: 100%;
+  }
+
+  .card-secondary {
+    border: none;
+    border-radius: 0;
+  }
+
+  .card-secondary-content {
+    padding: 0.5rem 0 0 0;
+  }
+
+  .card-secondary-image {
+    border-radius: 20px;
+    aspect-ratio: 350 / 345;
+  }
+}
