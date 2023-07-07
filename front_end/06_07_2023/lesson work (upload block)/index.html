@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag'n'drop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">Upload file</p>
+      <div class="drag-n-drop">
+        <p class="drag-n-drop-title">Drag & Drop Document</p>
+        <p class="drag-n-drop-extensions">doc, docx, pdf, txt</p>
+        <button class="button-primary">
+          <img
+            class="folder-icon"
+            src="./images/folder.svg"
+            alt="Folder icon"
+          />
+          <span class="button-text">Browse Files</span>
+        </button>
+      </div>
+      <div class="status-bar">
+        <div class="file-upload">
+          <!-- file icon -->
+          <div class="file-upload-icon-container">
+            <img src="./images/file.svg" alt="File icon" />
+          </div>
+          <!-- file icon -->
+          <!-- progress bar -->
+          <div class="file-details">
+            <div class="file-details-header">
+              <p>File name file name file.doc</p>
+              <span class="file-size">50 kb</span>
+            </div>
+            <!-- upload bar -->
+            <div class="upload-bar">
+              <div class="uploaded"></div>
+            </div>
+            <!-- upload bar -->
+          </div>
+          <!-- progress bar -->
+          <!-- cancel icon -->
+          <div class="cancel-upload">
+            <img src="./images/x.svg" alt="Cancel upload icon (X)" />
+          </div>
+          <!-- cancel icon -->
+        </div>
+        <div class="status-bar-buttons">
+          <button class="button-secondary">Error Log CSV</button>
+          <button class="button-secondary">Export As CSV</button>
+          <button class="button-primary submit-button">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
