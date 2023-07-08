@@ -12,15 +12,12 @@ a {
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  display: flex;
-  justify-content: center;
   padding: 1rem 1rem;
 }
 
 .cards {
   display: grid;
   gap: 1rem 0;
-  max-width: 800px;
 }
 
 .card-secondary-wrapper {
@@ -36,14 +33,15 @@ body {
 .card-category,
 .card-date {
   font-weight: 500;
-  color: #444444;
 }
 
 /* card-primary */
 
 .card-primary {
   position: relative;
-  height: 630px;
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
   border-radius: 20px;
   background-image: linear-gradient(
     to top,
@@ -52,7 +50,12 @@ body {
   );
   overflow: hidden;
   cursor: pointer;
-  transition: background-image 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+.card-primary:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .card-primary-image {
@@ -64,9 +67,7 @@ body {
 }
 
 .card-primary-content {
-  position: absolute;
-  bottom: 0;
-  padding: 0 0 1rem 1rem;
+  padding: 1rem;
   color: #ffffff;
 }
 
@@ -78,7 +79,7 @@ body {
 }
 
 .card-primary-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 /* card-secondary */
@@ -102,15 +103,28 @@ body {
   padding: 1rem;
 }
 
+.card-secondary-category,
+.card-secondary-date {
+  color: #444444;
+}
+
 .card-secondary-title {
   font-size: 1.5rem;
   transition: color 300ms;
 }
 
 @media (min-width: 768px) {
+  .card-primary {
+    height: 600px;
+  }
+
   .card-primary-content {
-    width: 80%;
+    width: 75%;
     padding: 0 0 2rem 2rem;
+  }
+
+  .card-primary-title {
+    font-size: 2rem;
   }
 
   .card-secondary-wrapper {
@@ -122,18 +136,17 @@ body {
 @media (min-width: 1200px) {
   body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 1rem;
   }
 
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0 1.5rem;
     max-width: 1280px;
-  }
-
-  .card-primary {
-    height: 100%;
   }
 
   .card-secondary {
